@@ -21,7 +21,7 @@ class Home extends React.Component {
   }
   render() {
     // console.log(location)
-    return <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+    return <Animated animationIn="fadeInLeft" animationOut="fadeOut" isVisible={true}>
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="section">
@@ -58,14 +58,10 @@ class Home extends React.Component {
                     {this.state.error.country}
                   </small>}
                 </div>
-                <Link className="button" id="buttons" to={`/weather/${this.state.data.city}/${this.state.data.country}`}> Enter </Link>
+                <Link className="button" id="sunMoonButton" to={`/weather/${this.state.data.city}/${this.state.data.country}`}> Enter </Link>
               </form>
             </div>
           </div>
-        </div>
-        <div className="social-icons">
-          <a href="https://github.com/marepstein" target="blank"><img src="./images/github-brands.svg" width="82" height="86" title="GitHub" alt="GitHub"></img></a>
-          <a href="https://github.com/UstinVaskin" target="blank"><img src="./images/github-brands.svg" width="82" height="86" title="GitHub" alt="GitHub"></img></a>
         </div>
       </section>
     </Animated>
