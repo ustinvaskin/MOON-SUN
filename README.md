@@ -1,5 +1,4 @@
-![Image anchors 'Sink a ship baby'](https://i.imgur.com/oL0F346.png)
-
+![Image anchors 'MOON AND SUN'](https://i.imgur.com/oL0F346.png)
 
 ### Overview:
  It was a paired project using Rect router and API to build an app. Marissa and I are decided on taking astro-theme. A Web App that accurately shows the state and phase of the Sun and Moon in any place with daily-updated horoscope. 
@@ -152,8 +151,7 @@ We had to pass on data from one page to another.
 
 ### Final Product:
 
-![Image of a game desktop 'MOON AND SUN'](https://media.giphy.com/media/kD5b43LUyZUKAzAgci/giphy.gif)
-
+![Image of desktop 'MOON AND SUN'](https://i.imgur.com/H1MBT5W.gif)
 
 ### Future Enhancement
  There are several potential future features that can be implemented, such as:
@@ -161,5 +159,13 @@ We had to pass on data from one page to another.
 * Add Astro - Maps;
 * Add Compass;
 * Mobile version (Responsive).
+
+
+
+
+
+
+
+
 
 
