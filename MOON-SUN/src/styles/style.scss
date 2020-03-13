@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .hero {
 	background-color: black;
 }
@@ -5,7 +7,6 @@
 #home-title {
 	color: white; 
 	font-size: 200px;
-	// transform:skew(60deg, -30deg) scaleY(.6);
 }
 
 #landing {
@@ -96,7 +97,7 @@ h5 {
 }
 
 .moon {
-	// border: 1px solid red; 
+
 	height: 270px;
 	width: 250px; 
 	border-radius: 50%; 
@@ -136,23 +137,44 @@ h5 {
 }
 
 .moonAndSun {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-flex-direction: row;
-align-items: flex-end;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-align: end;
+    -ms-flex-align: end;
+        align-items: flex-end;
 }
 
 .column2{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
 .columnIS {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 
@@ -187,8 +209,8 @@ $line-height: $clip-height - 5px;
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
-  // Sort out nasty text fuzz
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -webkit-font-kerning: normal;
   -webkit-text-size-adjust: 100%;
@@ -205,10 +227,14 @@ $line-height: $clip-height - 5px;
   
   // Change the perspective of each alternating line
   &:nth-child(odd) {
-    transform: skew(60deg, -30deg) scaleY(.66667);
+    -webkit-transform: skew(60deg, -30deg) scaleY(.66667);
+        -ms-transform: skew(60deg, -30deg) scaleY(.66667);
+            transform: skew(60deg, -30deg) scaleY(.66667);
   }
   &:nth-child(even) {
-    transform: skew(0deg, -30deg) scaleY(1.33333);
+    -webkit-transform: skew(0deg, -30deg) scaleY(1.33333);
+        -ms-transform: skew(0deg, -30deg) scaleY(1.33333);
+            transform: skew(0deg, -30deg) scaleY(1.33333);
   }
   
   // Loop over the total lines and apply a left offset
@@ -227,8 +253,11 @@ p {
   height: $clip-height;
   line-height: $line-height;
   padding: 0 10px;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   vertical-align: top;
   white-space: nowrap;
 }
@@ -238,6 +267,7 @@ p {
 */
 .Words:hover {
   p {
-    transform: translate3d(0, -($clip-height), 0);
+    -webkit-transform: translate3d(0, -($clip-height), 0);
+            transform: translate3d(0, -($clip-height), 0);
   }
 }
